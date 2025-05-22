@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Seleção de Carros</title>
+</head>
+<body>
+    <header>
+        <div class="text">
+            <h1>Selecione a cor do carro</h1>
+            <p>Carro selecionado <div id="result">?</div></p>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="track"></div>
+            <div id="yellow"></div>
+            <div id="red"></div>
+            <audio src="assets/audio/cars.mp3"></audio>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <!-- Substituindo os círculos pela seleção de carros com GIFs -->
+            <div class="car-selection">
+                <div class="car-option" id="yellow-option">
+                    <div class="car-spin" id="yellow-spin"></div>
+                    <p>Amarelo</p>
+                </div>
+                <div class="car-option" id="red-option">
+                    <div class="car-spin" id="red-spin"></div>
+                    <p>Vermelho</p>
+                </div>
+            </div>
+            
+            <div class="controls">
+                <div class="btn" id="resetar">Resetar</div>
+                <div class="btn" id="acelerar">Acelerar</div>
+                <div class="btn" id="desacelerar">Desacelerar</div>
+            </div>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
